@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cb60b3+1,a80077+21,cb60b3+42,c146a1+61,a80077+69,c146a1+85,c146a1+85,db36a4+100 */
+background: #cb60b3; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #cb60b3 1%, #a80077 21%, #cb60b3 42%, #c146a1 61%, #a80077 69%, #c146a1 85%, #c146a1 85%, #db36a4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #cb60b3 1%,#a80077 21%,#cb60b3 42%,#c146a1 61%,#a80077 69%,#c146a1 85%,#c146a1 85%,#db36a4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #cb60b3 1%,#a80077 21%,#cb60b3 42%,#c146a1 61%,#a80077 69%,#c146a1 85%,#c146a1 85%,#db36a4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+header{
+    width: 75%;
+    margin: 0 auto;
+}
+#wraper{
+    width: 80%;
+    margin: 0 auto;
+}
+.entete{
+    display: flex;
+    justify-content: space-between;
+}
+#logo figure img{
+    width: 150px;
+}
+nav{
+    
+    padding: 75px;
+}
+a{
+    text-decoration: none;
+    
+}
+nav a {
+    padding: 3em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ccc;
+}
+#burger{
+    display: none;
+    padding: 75px;
+    
+}
+#burger div{
+    width: 50px;
+    border: 2px solid #ccc;
+    margin: 0.8em;    
+}
+.banniere{
+    height: 500px;
+    background: url("img/banniere.jpg") no-repeat center ;
+    background-size: cover;
+    background-position: 0% -180px;
+    text-align: center;
+    color: #ccc;
+    padding: 20%;
+}
+h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+.banniere p{
+    font-size: 20px;
+    margin: 40px;
+}
+.bouton{
+    color: #ccc;
+    border: 2px solid #cb60b3;
+    padding: 16px;
+}
+/*fin du header*/
+.wwa{
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-around;
+}
+.wwa div{
+    /*text-align: center;*/
+    max-width: 33.3%;
+    flex: 1;
+    padding: 32px;
+}
+#what dl i{
+    color: #db36a4;
+}
