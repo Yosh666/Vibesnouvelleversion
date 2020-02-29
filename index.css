@@ -11,7 +11,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', end
 
 }
 header{
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 #wraper{
@@ -27,15 +27,15 @@ header{
 }
 nav{
     
-    padding: 75px;
+    padding-top: 75px;
 }
 a{
     text-decoration: none;
     
 }
 nav a {
-    padding: 3em;
-    font-size: 1.3em;
+    padding: 16px;
+    font-size: 24px;
     font-weight: bold;
     color: #ccc;
 }
@@ -48,6 +48,11 @@ nav a {
     width: 50px;
     border: 2px solid #ccc;
     margin: 0.8em;    
+}
+/*fin du header*/
+.blanche{
+    background-color: #ccc;
+    margin:0 auto;
 }
 .banniere{
     height: 500px;
@@ -64,20 +69,20 @@ h1{
 }
 .banniere p{
     font-size: 20px;
-    margin: 40px;
+    /*margin: 40px;*/
 }
 .bouton{
     color: #ccc;
     border: 2px solid #cb60b3;
     padding: 16px;
 }
-/*fin du header*/
+
 .wwa{
-    background-color: #ccc;
+    
     display: flex;
     justify-content: space-around;
 }
-.wwa div{
+.www{
     /*text-align: center;*/
     max-width: 33.3%;
     flex: 1;
@@ -85,4 +90,17 @@ h1{
 }
 #what dl i{
     color: #db36a4;
+}
+.porfolio{
+    margin: -20px;
+}
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image{
+    max-width: 25%;
+}
+.subgalerie ul{
+    list-style-type: none;
 }
