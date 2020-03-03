@@ -1,0 +1,38 @@
+
+:root{
+    --pink-color: #cb60b3;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.dispnone{
+    display: none;
+}
+a{
+    text-decoration: none;
+    
+}
+#burger div{
+    width: 50px;
+    border: 2px solid #ccc;
+    margin: 0.8em;    
+}
+header{
+    width: 80%;
+    margin: 0 auto;
+}
+#logo  img{
+    width: 150px;
+}
+nav{
+    
+    padding-top: 75px;
+}
+nav a {
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -17,7 +17,10 @@ header{
 #wraper{
     width: 80%;
     margin: 0 auto;
+    background-color: #ccc;
+    margin:0 auto;
 }
+
 .entete{
     display: flex;
     justify-content: space-between;
@@ -44,15 +47,15 @@ nav a {
     padding: 75px;
     
 }
-#burger div{
-    width: 50px;
-    border: 2px solid #ccc;
-    margin: 0.8em;    
-}
+
 /*fin du header*/
 .blanche{
     background-color: #ccc;
     margin:0 auto;
+}
+.gouttiere{
+    width: 80%;
+    margin: 0 auto;
 }
 .banniere{
     height: 500px;
@@ -72,9 +75,15 @@ h1{
     /*margin: 40px;*/
 }
 .bouton{
-    color: #ccc;
+    
     border: 2px solid #cb60b3;
     padding: 16px;
+}
+.rose{
+    color:#cb60b3;
+}
+.blanc{
+    color: #ccc;
 }
 
 .wwa{
@@ -101,6 +110,28 @@ h1{
 .image{
     max-width: 25%;
 }
+
 .subgalerie ul{
     list-style-type: none;
+    display: flex;
+    
+        
+}
+.subgalerie ul li a{
+    padding: 15px;
+    
+}
+.paralax{
+    height: 300px;
+    background: url(img/paralax.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #ccc;
+}
+.down{
+    width: 100%;
+    background-color: #222222;
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
 }
