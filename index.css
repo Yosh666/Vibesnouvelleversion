@@ -107,8 +107,16 @@ h1{
     display: flex;
     flex-wrap: wrap;
 }
-.image{
-    max-width: 25%;
+figure.image{
+    width: 25%;
+    overflow: hidden;
+    margin: 0;
+    height: 200px;
+    
+}
+.image img{
+    object-fit: cover;
+    width: 100%;
 }
 
 .subgalerie ul{

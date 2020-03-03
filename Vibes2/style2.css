@@ -21,15 +21,36 @@ a{
     text-decoration: none;
     
 }
+ul{
+    list-style: none;
+}
 .flex{
     display: flex;
+    justify-content: space-between;
 }
 .flex>*{
     flex: 1;
-}
 
+}
+.flex-x3>*{
+    max-width: 30%;
+}
+.flex-x2>*{
+    max-width: 47%;
+}
+.flexpetit{
+    display: flex;
+    
+}
+h2{
+    text-align: center;
+    padding-bottom: 32px;
+}
 .text-blanc{
     color: #ccc ;
+}
+.text-rose{
+    color: var(--pink-color);
 }
 #burger div{
     width: 50px;
@@ -40,11 +61,14 @@ header{
     width: 80%;
     margin: 0 auto;
 }
+#logo{
+    flex: 1;
+}
 #logo  img{
     width: 150px;
 }
 nav{
-    
+    flex: 3;
     padding-top: 75px;
 }
 nav a {
@@ -59,7 +83,7 @@ nav a {
 #wraper{
     width: 80%;
     margin: 0 auto;
-    background-color: #eee;
+    background-color: #ddd;
 }
 .gouttiere {
     width: 80%;
@@ -67,9 +91,86 @@ nav a {
 }
 .bouton{
     
-    border: 2px solid #cb60b3;
+    border: 2px solid var(--pink-color);
     padding: 16px;
+    display: inline-block;
+    margin: 16px 0;
+}
+.centrer{
+    text-align: center;
 }
 .cadre-blanc{
     border: 2px solid #ddd;
+}
+.banniere{
+    color: #eee;
+    height: 500px;
+    background: url("img/banniere.jpg") no-repeat center ;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: top center;
+}
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+}
+figure.image{
+    width: 25%;
+    overflow: hidden;
+    margin: 0;
+    height: 200px;
+    
+}
+.image img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#more{
+    max-width: 150px;
+    float: right;
+    padding: 15px;
+    text-align: center;
+}
+#tri a{
+    padding-right: 16px;
+}
+.testi{
+    margin-bottom: 50px;
+}
+.trombine{
+    width: 120px;
+    margin: 0 2em;
+}
+.buy{
+    margin-top: 50px;
+    height: 400px;
+    background: url(img/paralax.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+form label,form input,form textarea{
+    display: inline-block;
+    width: 100%;
+    height: 2em;
+    line-height: 1.5em;
+    vertical-align: bottom;
+}
+form label{
+    margin-top: 1em;
+    height: 1em;
+    line-height: 1em;
+}
+form input, form textarea{
+    border: none;
+    background-color: #eee;
+}
+form textarea{
+    height: 6em;
+}
+#send{
+    background-color: var(--pink-color);
+    margin-top: 1em;
 }
