@@ -7,6 +7,12 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background: #cb60b3; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #cb60b3 1%, #a80077 21%, #cb60b3 42%, #c146a1 61%, #a80077 69%, #c146a1 85%, #c146a1 85%, #db36a4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #cb60b3 1%,#a80077 21%,#cb60b3 42%,#c146a1 61%,#a80077 69%,#c146a1 85%,#c146a1 85%,#db36a4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #cb60b3 1%,#a80077 21%,#cb60b3 42%,#c146a1 61%,#a80077 69%,#c146a1 85%,#c146a1 85%,#db36a4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
 }
 .dispnone{
     display: none;
@@ -14,6 +20,16 @@ body{
 a{
     text-decoration: none;
     
+}
+.flex{
+    display: flex;
+}
+.flex>*{
+    flex: 1;
+}
+
+.text-blanc{
+    color: #ccc ;
 }
 #burger div{
     width: 50px;
@@ -35,4 +51,25 @@ nav a {
     padding: 16px;
     font-size: 24px;
     font-weight: bold;
+}
+
+.blanche{
+    background-color: #ddd ;
+}
+#wraper{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #eee;
+}
+.gouttiere {
+    width: 80%;
+    margin: 0 auto;
+}
+.bouton{
+    
+    border: 2px solid #cb60b3;
+    padding: 16px;
+}
+.cadre-blanc{
+    border: 2px solid #ddd;
 }
