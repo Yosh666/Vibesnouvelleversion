@@ -24,6 +24,11 @@ a{
 ul{
     list-style: none;
 }
+h2{
+    text-align: center;
+    
+}
+
 .flex{
     display: flex;
     justify-content: space-between;
@@ -42,16 +47,15 @@ ul{
     display: flex;
     
 }
-h2{
-    text-align: center;
-    
-}
 
 .text-blanc{
     color: #ccc ;
 }
 .text-rose{
     color: var(--pink-color);
+}
+.cadre-blanc{
+    border: 2px solid #ddd;
 }
 .gras{
     color: #ffffff;
@@ -70,6 +74,27 @@ h2{
 }
 .gauche{
     text-align: left;
+}
+.blanche{
+    background-color: #ddd ;
+}
+.noire{
+    background-color: #222;
+}  
+.gouttiere {
+    width: 80%;
+    margin: 0 auto;
+}
+.bouton{
+    
+    border: 2px solid var(--pink-color);
+    padding: 16px;
+    display: inline-block;
+    margin: 16px 0;
+}
+.centrer{
+    text-align: center;
+    
 }
 #burger div{
     width: 50px;
@@ -95,38 +120,18 @@ nav a {
     font-size: 24px;
     font-weight: bold;
 }
-
-.blanche{
-    background-color: #ddd ;
+nav a:hover{
+    border-bottom: 2px solid #ccc;
 }
+
+
 #wraper{
     width: 80%;
     margin: 0 auto;
     background-color: #ddd ;
 }
-.noire{
-    background-color: #222;
-}
-    
 
-.gouttiere {
-    width: 80%;
-    margin: 0 auto;
-}
-.bouton{
-    
-    border: 2px solid var(--pink-color);
-    padding: 16px;
-    display: inline-block;
-    margin: 16px 0;
-}
-.centrer{
-    text-align: center;
-    
-}
-.cadre-blanc{
-    border: 2px solid #ddd;
-}
+
 .banniere{
     color: #eee;
     height: 500px;
@@ -136,9 +141,30 @@ nav a {
     padding-bottom: 100px;
     background-position: top center;
 }
+/*accordéon*/
+.accordion-element{
+    border: 1px solid #aaaaaa;
+    margin-bottom: 1em;
+    padding: 0 2em;
+}
+.accordion-element:not(:first-child) p{/*  on affiche le premier p*//*Il faut coller les ":"*/
+    display: none;/*mais pas les autres*/
+}
+.accordion-element .fas /*on vise les fontawesome*/{
+    margin-left: -1.5em;
+    margin-right:0.5em;
+}
+.accordion-element h4, .accordion-element p{
+    margin: 0.8rem 0;/*root em donc le em du navigateur*/
+}
+/*fin d'accordéon*/
+/*debut galerie*/
 .galerie{
     display: flex;
     flex-wrap: wrap;
+}
+figure{
+    position: relative;
 }
 figure.image{
     width: 25%;
@@ -151,7 +177,33 @@ figure.image{
     object-fit: cover;
     width: 100%;
 }
+.picture:hover{
+    cursor: pointer;
+}
 
+#img2{
+    transform: translateY(-110px);
+}
+#img5{
+    transform: translateY(-190px);
+}
+.fa-music, .fa-youtube{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.50;
+    
+}
+.fa-music:hover{
+    color: var(--pink-color);
+    opacity: 1;
+}
+.fa-youtube:hover{
+    color: var(--pink-color);
+    opacity:1;
+}
+
+/*subgalerie*/
 #more{
     max-width: 150px;
     float: right;
@@ -161,21 +213,52 @@ figure.image{
 #tri a{
     padding-right: 16px;
 }
-.testi{
-    margin-bottom: 50px;
+#tri a:hover{
+    color: #222;
 }
-.trombine{
-    width: 120px;
-    margin: 0 2em;
+#tri a.text-rose{
+    color: var(--pink-color);
 }
+/*fin galerie*/
+/*début testimonial*/
+#testimonials>div{/*le chevron">" veut dire tout les enfants direct*/
+    align-items: flex-start;
+    padding: 2em 0;
+    border-bottom: 1px solid #aaa;
+}
+#testimonials>div:last-child{/*le dernier des enfants direct*/
+    border: none;
+}
+#testimonials img{
+    height: 5em;
+    margin:0 1em 0 0;
+}
+#testimonials>div:nth-child(even){/*tout les enfants pairs*/
+    flex-direction: row-reverse;
+    text-align: right;
+}
+#testimonials>div:nth-child(even) img{/*mettre un espace aprés la parenthése*/
+    margin: 0 0 0 1em
+}
+blockquote{
+    margin: 0em;
+}
+blockquote p{
+    font-style: italic;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+/*fin testimonial*/
 .buy{
     margin-top: 50px;
     height: 400px;
-    background: url(img/paralax.jpg) no-repeat center;
+    background: url(img/paralax.jpg) no-repeat center fixed;/*fixed fais le parallax*/
+    
     background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+/*debut form*/
 form label,form input,form textarea{
     display: inline-block;
     width: 100%;
@@ -199,6 +282,7 @@ form textarea{
     background-color: var(--pink-color);
     margin-top: 1em;
 }
+/*fin form*/
  #down{
     background-color: #222;
     padding:0 10%;

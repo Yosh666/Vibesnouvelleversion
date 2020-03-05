@@ -10,6 +10,7 @@
     <title>VIbes 2 le retour</title>
 </head>
 <body>
+    <input type="color">
     <header>
         <section class="entete flexpetit text-blanc">
             <div id="logo">
@@ -71,15 +72,15 @@
                 </div>
                 <div class="www" id="accordeon">
 <!--A faire le js et le css sur l'accordeon-->
-                    <div class="accordion">                    
+                    <div class="accordion-element">                    
                         <h4><span class="fas fa-minus text-rose"></span>NULLA CONSEQUAT MASSA</h4>
                         <p>Chase mice at four in the morning wake up owner meeeeeeooww scratch at legs</p>
                     </div>
-                    <div class="accordion">                    
+                    <div class="accordion-element">                    
                         <h4> <span class="fas fa-plus text-rose"></span>VIVAMUS ELEMENTUM</h4>
                         <p>Chase mice at four in the morning wake up owner meeeeeeooww scratch at legs</p>
                     </div>
-                    <div class="accordion">                    
+                    <div class="accordion-element">                    
                         <h4 ><span class="fas fa-plus text-rose"></span>ETIAM ULTRICES NISI VEL</h4>
                         <p>Chase mice at four in the morning wake up owner meeeeeeooww scratch at legs</p>
                     </div>                   
@@ -91,30 +92,42 @@
                         <img id="img1" src="img/galerie1.jpg" alt="Chris Rallis">
                     </figure>
                     <figure class="image music">
-                    <a href="https://youtu.be/PeMvMNpvB5M">
+                    <a href="https://youtu.be/PeMvMNpvB5M" target="_blank">
                         <img id="img2" src="img/galerie2.jpg" alt="Chris Rallis">
-                        <i class="fas fa-music"></i>
+                        <i class="fas fa-music fa-2x text-blanc"></i>
                     </a>
                     </figure>
-                    <figure class="image video">
-                        <i class="fab fa-youtube"></i>
-                        <iframe id="videoahri" title="video Ahri LoL"
-                            src="https://youtu.be/hlalkAUkwqE">
-                        </iframe>   
+                    <figure class="image video  ">
+                        <i class="fab fa-youtube fa-2x  text-blanc"></i>
+                        <!--iframe en commentaire car ça fait planter mon js
+                        <iframe width="430" height="240" 
+                        src="https://www.youtube.com/embed/6-_JxiLl0Xs" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                        </iframe>
+                    -->
+                        <img  src="img/vid1.jpg" alt="Chris Rallis">
                     </figure>
                     <figure class="image picture">
                         <img id="img3" src="img/galerie3.jpg" alt="Chris Rallis">
                     </figure>
                     <figure class="image video">
-                        <i class="fab fa-youtube"></i>
-                        <iframe id="videoleona" title="video Leona LoL"
-                            src="https://www.youtube.com/watch?v=iRvcu5oa1EU">
+                        <i class="fab fa-youtube fa-2x text-blanc"></i>
+                        <!--iframe en commentaire car ça fait planter mon js
+                        <iframe width="430" height="240" 
+                        src="https://www.youtube.com/embed/iRvcu5oa1EU" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
                         </iframe>
+                    -->
+                        <img  src="img/vid2.jpg" alt="Chris Rallis">
+                        
                     </figure>
                     <figure class="image music">
-                        <a href="https://youtu.be/Xn676-fLq7I">
+                        <a href="https://youtu.be/Xn676-fLq7I" target="_blank">
                         <img id="img4"src="img/galerie4.jpg" alt="Chris Rallis">
-                        <i class="fas fa-music"></i> 
+                        <i class="fas fa-music fa-2x text-blanc"></i> 
                         </a>
                     </figure>
                     <figure class="image picture">
@@ -124,12 +137,12 @@
                         <img id="img6" src="img/galerie6.jpg" alt="Chris Rallis">
                     </figure>
                 </div>
-                <div class="blanche flex gouttiere" id="subgalerie">
-                    <ul class="flexpetit"id="tri">
-                        <li><a class="text-rose"id="all" href=".galerie">All</a></li>
-                        <li><a  href=".galerie">Images</a></li>
-                        <li><a  href=".galerie">Music</a></li>
-                        <li><a  href=".galerie">Video</a></li>
+                <div class="blanche flex gouttiere " id="subgalerie">
+                    <ul class="flexpetit "id="tri">
+                        <li><a class="text-rose"id="all" href="">All</a></li>
+                        <li><a  class="text-blanc" id="show_picture" href="#">Images</a></li>
+                        <li><a  class="text-blanc" id="show_audio" href="#">Music</a></li>
+                        <li><a  class="text-blanc" id="show_video" href="#">Video</a></li>
                     </ul>
                     <a class="bouton text-rose " id="more" href="#" title="Load">LOAD MORE</a>
                 </div>
@@ -137,33 +150,39 @@
             <section class="testimonial blanche gouttiere">
                 <h2>CLIENTS TESTIMONIALS</h2>
                 <div class="souligne grand "></div>
-                <div class="testi flexpetit">
-                    <img class="trombine"src="img/testi1.png" alt="iconsfinder">
-                    <div>
-                        <q>Sleep on dog bed, force dog to sleep on floor eat a plant, kill a hand meowing non stop for food. Ptracy friends are not food paw at your fat belly. Spit up on light gray carpet instead of adjacent linoleum get my claw stuck in the dog's ear and missing until dinner time get video posted to
-                        internet for chasing red dot so i show my fluffy belly but it's a trap!</q>
-                        <footer><p class="auteur"><strong>Rajin Shuru </strong> Impératrice</p></footer>
+                <div  id="testimonials">
+                    <div class="testi flexpetit">
+                        <img class="trombine"src="img/testi1.png" alt="iconsfinder">
+                        <blockquote>
+                            <p>Sleep on dog bed, force dog to sleep on floor eat a plant, kill a hand meowing non stop for food. Ptracy friends are not food paw at your fat belly. Spit up on light gray carpet instead of adjacent linoleum get my claw stuck in the dog's ear and missing until dinner time get video posted to
+                            internet for chasing red dot so i show my fluffy belly but it's a trap!</p>
+                            <footer><strong>Rajin Shuru </strong> Impératrice</footer>
+                        </blockquote>
                     </div>
-                </div>
-                <div class="testi flexpetit">                   
-                    <div>
-                        <q>Sleep on dog bed, force dog to sleep on floor eat a plant, kill a hand meowing non stop for food. Ptracy friends are not food paw at your fat belly. Spit up on light gray carpet instead of adjacent linoleum get my claw stuck in the dog's ear and missing until dinner time get video posted to
-                        internet for chasing red dot so i show my fluffy belly but it's a trap!</q>
-                        <footer><p class="auteur"><strong>Karin Durand </strong> CEO</p></footer>
+                    
+                    <div class="testi flexpetit">
+                        <img class="trombine" src="img/testi2.png" alt="iconsfinder">                   
+                        <blockquote>
+                            <p>Sleep on dog bed, force dog to sleep on floor eat a plant, kill a hand meowing non stop for food. Ptracy friends are not food paw at your fat belly. Spit up on light gray carpet instead of adjacent linoleum get my claw stuck in the dog's ear and missing until dinner time get video posted to
+                            internet for chasing red dot so i show my fluffy belly but it's a trap!</p>
+                            <footer><strong>Karin Durand </strong> CEO</footer>
+                        </blockquote>
                     </div> 
-                    <img class="trombine" src="img/testi2.png" alt="iconsfinder">
-                </div>
-                <div class="testi flexpetit">
-                    <img class="trombine" src="img/testi3.png" alt="iconsfinder">
-                    <div>
-                        <q>Sleep on dog bed, force dog to sleep on floor eat a plant, kill a hand meowing non stop for food. Ptracy friends are not food paw at your fat belly. Spit up on light gray carpet instead of adjacent linoleum get my claw stuck in the dog's ear and missing until dinner time get video posted to
-                        internet for chasing red dot so i show my fluffy belly but it's a trap!</q>
-                        <footer><p class="auteur"><strong>Monique Benzawi </strong> Ambassadrice</p></footer>
+                        
+                    
+                    <div class="testi flexpetit">
+                        <img class="trombine" src="img/testi3.png" alt="iconsfinder">
+                        <blockquote>
+                            <p>Sleep on dog bed, force dog to sleep on floor eat a plant, kill a hand meowing non stop for food. Ptracy friends are not food paw at your fat belly. Spit up on light gray carpet instead of adjacent linoleum get my claw stuck in the dog's ear and missing until dinner time get video posted to
+                            internet for chasing red dot so i show my fluffy belly but it's a trap!</p>
+                            <footer><strong>Monique Benzawi </strong> Ambassadrice</footer>
+                        </blockquote>
                     </div>
-                </div>  
+                </div>
                  <div class="centrer">
                      <a class="bouton text-rose centrer"href="#" title="Load">BECOME OUR CLIENTS</a>   
                  </div>
+                 
             </section>
             <section class="buy text-blanc centrer" id="para">
                 <h2>NEW HORIZONS AWAIT</h2>
@@ -230,14 +249,18 @@
                 <div id="twitter">
                     <h3>TWITTER FEED</h3>
                     <div class="souligne petit gauche"></div>
-                    <p><i class="fab fa-earlybirds text-blanc"></i> <i class="fab fa-earlybirds text-blanc"></i> <i class="fab fa-earlybirds text-blanc"></i> <i class="fab fa-earlybirds fa-spin text-blanc"></i></p>
+                    <p><i class="fas fa-dove text-blanc"></i> <i class="fas fa-dove text-blanc"></i> <i class="fas fa-dove text-blanc"></i> <i class="fas fa-dove fa-spin text-blanc"></i></p>
                 </div>
             </section>
         </footer>
-
         
     </div>    
-        
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src= "accordion.js"></script>
+    <script src="tri.js"></script>
 
 
 
