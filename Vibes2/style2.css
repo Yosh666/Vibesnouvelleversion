@@ -12,7 +12,7 @@ body{
     background: -webkit-linear-gradient(-45deg,  #cb60b3 1%,#a80077 21%,#cb60b3 42%,#c146a1 61%,#a80077 69%,#c146a1 85%,#c146a1 85%,#db36a4 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg,  #cb60b3 1%,#a80077 21%,#cb60b3 42%,#c146a1 61%,#a80077 69%,#c146a1 85%,#c146a1 85%,#db36a4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    
+    position: relative;
 }
 .dispnone{
     display: none;
@@ -51,8 +51,14 @@ h2{
 .text-blanc{
     color: #ccc ;
 }
+.text-gris{
+    color:#888;
+}
 .text-rose{
     color: var(--pink-color);
+}
+.shadow{
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 .cadre-blanc{
     border: 2px solid #ddd;
@@ -98,7 +104,7 @@ h2{
 }
 #burger div{
     width: 50px;
-    border: 2px solid #ccc;
+    border: 2px solid var(--pink-color);
     margin: 0.8em;    
 }
 header{
@@ -115,9 +121,16 @@ nav{
     flex: 3;
     padding-top: 75px;
 }
+.open{
+    display: flex;
+    flex:1;
+    width: 30%;
+    flex-direction: column;
+    align-items: flex-end;
+}
 nav a {
-    padding: 16px;
-    font-size: 24px;
+    padding: 1em;
+    font-size: 1.5empx;
     font-weight: bold;
 }
 nav a:hover{
@@ -158,20 +171,27 @@ nav a:hover{
     margin: 0.8rem 0;/*root em donc le em du navigateur*/
 }
 /*fin d'accordéon*/
+.wwa{
+    padding: 2em 0;
+}
 /*debut galerie*/
 .galerie{
     display: flex;
     flex-wrap: wrap;
 }
-figure{
-    position: relative;
-}
-figure.image{
+/*.figure{
+     position: relative; 
+}*/
+.image{
     width: 25%;
     overflow: hidden;
     margin: 0;
     height: 200px;
+
     
+}
+.music{
+    position: relative;
 }
 .image img{
     object-fit: cover;
@@ -221,6 +241,9 @@ figure.image{
 }
 /*fin galerie*/
 /*début testimonial*/
+.testimonials{
+    padding: 2em 0;
+}
 #testimonials>div{/*le chevron">" veut dire tout les enfants direct*/
     align-items: flex-start;
     padding: 2em 0;
@@ -295,4 +318,91 @@ form textarea{
 
 #sub{
     background-color: #222;
+}
+/*début burger */
+nav.open{
+    /*nav burger*/
+    display: flex;
+    /* padding-top: 0; */
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.8em;
+    color: #333;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    background-color: #ccc;
+    
+}
+/*burger passage en croix*/
+#burger div{
+    transition:all ease-in-out 0.4s;
+}
+#burger.dispclose div:nth-child(1){
+    display: none;    
+}
+#burger.dispclose div:nth-child(2){
+    transform: rotate(45deg)translateX(10px);
+}
+#burger.dispclose div:nth-child(3){
+    transform: rotate(-45deg) translateX(10px);
+}
+
+@media all and (max-width: 768px){
+   /*burger*/
+   /*on vire les element du header pr garder le burger visible*/
+    #logo{
+        display: none;
+    }
+    .entete{
+        width: 60%;
+        float: right;
+        position: fixed;
+        top:20px;
+    }
+    .close{
+        display: none;
+    }
+   
+    #burger{
+        display: block;
+        z-index: 9999;
+        
+    }
+    /*fin burger*/
+    .flex{
+        display: block;
+    }
+    .flex-x3>*{
+        max-width: 100%;
+    }
+    .flex-x2>*{
+        max-width:100%;
+    }
+    .flexpetit{
+        
+        align-items: center;
+    }
+    #more{
+        float: unset;
+    }
+    blockquote p{
+        font-size: 1em;
+    }
+    .image{
+        width: 50%;
+       
+
+    }
+    .image img{
+        object-fit: center;
+    }
+    #img5{
+        transform: none;
+    }
+
+}
+@media all and (max-width: 360px){
+    .image{
+        width: 100%;
+    }
+    
 }

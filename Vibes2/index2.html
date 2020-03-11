@@ -10,8 +10,9 @@
     <title>VIbes 2 le retour</title>
 </head>
 <body>
-    <input type="color">
+    
     <header>
+        
         <section class="entete flexpetit text-blanc">
             <div id="logo">
                 
@@ -19,7 +20,7 @@
                 <img src="img/1logo.png" alt="">
                 
             </div>
-            <nav>
+            <nav class="close">
                 <a class="text-blanc" href="#">HOME</a>
                 <a class="text-blanc" href="#">ABOUT</a>
                 <a class="text-blanc" href="#">PORTRAITS</a>
@@ -37,8 +38,8 @@
     </header> 
     <div id="wraper">
         <main>
-            <section class="banniere blanche text-blanc centrer">
-                <h1>LE PRIX DE LA CONQUÊTE, SAVOIR ATTAQUER POUR SE DÉFENDRE </h1>
+            <section class="banniere blanche text-blanc centrer shadow">
+                <h1 >LE PRIX DE LA CONQUÊTE, SAVOIR ATTAQUER POUR SE DÉFENDRE </h1>
                 <p>Les amazones dominent le monde mais seule une vigilance au quotidien permettra de garder leur égémonie</p>
                 <a class="bouton text-blanc cadre-blanc centrer" href="#" title="More">READ MORE</a>
             </section>
@@ -61,7 +62,7 @@
                     </dl>
                     <dl>
                         
-                        <dt><i class="fas fa-cog text-rose"></i>VERY EASE TO USE</dt>
+                        <dt><i class="fas fa-cog  text-rose"></i>VERY EASE TO USE</dt>
                         <dd>Page Builder & Shortcodes</dd>
                     </dl>
                     <dl>
@@ -88,61 +89,60 @@
             </section>
             <section class="portfolio blanche">
                 <div class="galerie">
-                    <figure class=" image picture">
+                    <div  class="figure image picture">
                         <img id="img1" src="img/galerie1.jpg" alt="Chris Rallis">
-                    </figure>
-                    <figure class="image music">
+                    </div>
+                    <div  class="figure image music">
                     <a href="https://youtu.be/PeMvMNpvB5M" target="_blank">
                         <img id="img2" src="img/galerie2.jpg" alt="Chris Rallis">
                         <i class="fas fa-music fa-2x text-blanc"></i>
                     </a>
-                    </figure>
-                    <figure class="image video  ">
-                        <i class="fab fa-youtube fa-2x  text-blanc"></i>
-                        <!--iframe en commentaire car ça fait planter mon js
+                    </div>
+                    <div  class="figure image video  ">
+                        <!--<i class="fab fa-youtube fa-2x  text-blanc"></i>-->
                         <iframe width="430" height="240" 
                         src="https://www.youtube.com/embed/6-_JxiLl0Xs" 
                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                         </iframe>
-                    -->
-                        <img  src="img/vid1.jpg" alt="Chris Rallis">
-                    </figure>
-                    <figure class="image picture">
+                    
+                        <!-->img  src="img/vid1.jpg" alt="Chris Rallis">-->
+                    </div>
+                    <div  class="figure image picture">
                         <img id="img3" src="img/galerie3.jpg" alt="Chris Rallis">
-                    </figure>
-                    <figure class="image video">
-                        <i class="fab fa-youtube fa-2x text-blanc"></i>
-                        <!--iframe en commentaire car ça fait planter mon js
+                    </div>
+                    <div  class="image video">
+                        <!--<i class="fab fa-youtube fa-2x text-blanc"></i>-->
+                        
                         <iframe width="430" height="240" 
                         src="https://www.youtube.com/embed/iRvcu5oa1EU" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                         </iframe>
-                    -->
-                        <img  src="img/vid2.jpg" alt="Chris Rallis">
+                    
+                        <!--<img  src="img/vid2.jpg" alt="Chris Rallis">-->
                         
-                    </figure>
-                    <figure class="image music">
+                    </div>
+                    <div  class="figure image music">
                         <a href="https://youtu.be/Xn676-fLq7I" target="_blank">
                         <img id="img4"src="img/galerie4.jpg" alt="Chris Rallis">
                         <i class="fas fa-music fa-2x text-blanc"></i> 
                         </a>
-                    </figure>
-                    <figure class="image picture">
+                    </div>
+                    <div  class="figure image picture">
                         <img id="img5" src="img/galerie5.jpg" alt="Chris Rallis">
-                    </figure>
-                    <figure class="image picture">
+                    </div>
+                    <div  class="figure image picture">
                         <img id="img6" src="img/galerie6.jpg" alt="Chris Rallis">
-                    </figure>
+                    </div>
                 </div>
                 <div class="blanche flex gouttiere " id="subgalerie">
                     <ul class="flexpetit "id="tri">
                         <li><a class="text-rose"id="all" href="">All</a></li>
-                        <li><a  class="text-blanc" id="show_picture" href="#">Images</a></li>
-                        <li><a  class="text-blanc" id="show_audio" href="#">Music</a></li>
-                        <li><a  class="text-blanc" id="show_video" href="#">Video</a></li>
+                        <li><a  class="text-gris" id="show_picture" href="#">Images</a></li>
+                        <li><a  class="text-gris" id="show_audio" href="#">Music</a></li>
+                        <li><a  class="text-gris" id="show_video" href="#">Video</a></li>
                     </ul>
                     <a class="bouton text-rose " id="more" href="#" title="Load">LOAD MORE</a>
                 </div>
@@ -184,7 +184,7 @@
                  </div>
                  
             </section>
-            <section class="buy text-blanc centrer" id="para">
+            <section class="buy text-blanc centrer shadow" id="para">
                 <h2>NEW HORIZONS AWAIT</h2>
                 <div class="souligne grand "></div>
                 <p> Even the all-powerfull Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind texts
@@ -261,6 +261,7 @@
     crossorigin="anonymous"></script>
     <script src= "accordion.js"></script>
     <script src="tri.js"></script>
+    <script src="burger.js"></script>
 
 
 
