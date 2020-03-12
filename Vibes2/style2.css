@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 body{
+    max-width: 1350px;
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     background: #cb60b3; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  #cb60b3 1%, #a80077 21%, #cb60b3 42%, #c146a1 61%, #a80077 69%, #c146a1 85%, #c146a1 85%, #db36a4 100%); /* FF3.6-15 */
@@ -23,6 +25,9 @@ a{
 }
 ul{
     list-style: none;
+}
+h1{
+    font-size: 1.5em;
 }
 h2{
     text-align: center;
@@ -50,6 +55,7 @@ h2{
 
 .text-blanc{
     color: #ccc ;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 .text-gris{
     color:#888;
@@ -108,7 +114,7 @@ h2{
     margin: 0.8em;    
 }
 header{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 #logo{
@@ -127,6 +133,7 @@ nav{
     width: 30%;
     flex-direction: column;
     align-items: flex-end;
+    padding-top: 0px;
 }
 nav a {
     padding: 1em;
@@ -139,7 +146,7 @@ nav a:hover{
 
 
 #wraper{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     background-color: #ddd ;
 }
@@ -159,6 +166,9 @@ nav a:hover{
     border: 1px solid #aaaaaa;
     margin-bottom: 1em;
     padding: 0 2em;
+}
+.accordion-element .fa-plus:hover{
+    cursor: pointer;
 }
 .accordion-element:not(:first-child) p{/*  on affiche le premier p*//*Il faut coller les ":"*/
     display: none;/*mais pas les autres*/
@@ -268,7 +278,7 @@ blockquote{
 }
 blockquote p{
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-top: 0;
 }
 /*fin testimonial*/
